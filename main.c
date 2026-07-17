@@ -226,7 +226,7 @@ void LCD_COMMAND(unsigned char cmd)
 IOSET0=(cmd&0xf0)<<10;
 IOCLR0=RS;
 IOSET0=E;
-delay_ms(2);                                                           (2);
+delay_ms(2);                                                           
 IOCLR0=E;
 
 IOCLR0=LCD_D;
